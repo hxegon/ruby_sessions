@@ -1,3 +1,10 @@
+class Pet # Inherited super class
+  def initialize(name)
+    @legs = 4
+    @name = name
+  end
+end
+
 module Animal
   def breathes?
     true
@@ -7,13 +14,6 @@ end
 module Carnivorous
   def teeth
     'sharp'
-  end
-end
-
-class Pet
-  def initialize(name)
-    @legs = 4
-    @name = name
   end
 end
 
