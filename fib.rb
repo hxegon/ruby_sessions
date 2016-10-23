@@ -88,3 +88,9 @@ end
 # > ['cooper', 'matt'].map(&:capitalize)
 # or this:
 # > Array(1..10).map(&Fibonacci.method(:nth))
+
+class Fibonacci
+  def self.up_to(n)
+    Array(1..n).map(&:nth)
+  end
+end
